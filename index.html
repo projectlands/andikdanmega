@@ -435,6 +435,7 @@
             </div>
             <!-- /well-->
          </div>
+         
          <!-- /container -->
       </section>
       <!-- /Section ends -->
@@ -483,10 +484,25 @@
                .catch(error => console.error('Error!', error.message))
          });
          
-         
-         audioElement.play();
+        
 
       </script>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" align="center">Andik & Mega</h5>
+        </button>
+      </div>
+      <div class="modal-body" align="center">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="playAudio()">Lihat Undangan</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
       <!-- /footer ends -->
       <!-- Core JavaScript Files -->
       <script src="js/jquery.min.js"></script>
@@ -501,5 +517,19 @@
       <script src="js/prefixfree.js"></script>
       <!-- Open Street maps-->
       <script src="js/map.js"></script>	
+<script>
+  
+   $('#exampleModalCenter').modal({
+      keyboard: false,
+      show:true,
+      backdrop:'static'
+      })
+
+      var x = document.getElementById("myAudio"); 
+
+      function playAudio() { 
+      x.play(); 
+      } 
+</script>
    </body>
 </html>
