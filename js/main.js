@@ -4,15 +4,7 @@ Author: Ingrid Kuhn
 Author URI: themeforest/user/ingridk
 Version: 1.0
 */
-var playing = false;
-var audioElm = $('#myAudio').get(0);
-$(window).scroll(function() {
-  var pageScroll = $(window).scrollTop();
-  if(!playing && pageScroll > 500 && pageScroll < 3000){
-    audioElm.play();
-    playing = true;
-  }
-});
+
 
 "use strict";
 $(document).ready(function() {
